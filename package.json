@@ -1,7 +1,8 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "name": "npm-lightning-talk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "WLVJS 5 minute talk",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -11,14 +12,15 @@
     "export": "spectacle-renderer --delay 3000",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "fhwrdh@fhwrdh.net",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "7.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "spectacle": "^4.0.0",
-    "spectacle-renderer": "^0.0.3"
+    "spectacle-renderer": "^0.0.3",
+    "styled-components": "^3.2.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
