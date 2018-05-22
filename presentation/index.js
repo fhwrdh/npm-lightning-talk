@@ -79,6 +79,7 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
         progress="bar">
+
         <Slide bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             5 minutes of npm
@@ -121,6 +122,7 @@ export default class Presentation extends React.Component {
           <H>install dependencies</H>
           <AppearText>npm install --save express</AppearText>
           <AppearText>npm install --save-dev webpack</AppearText>
+          <AppearText>npm install</AppearText>
           <AppearText>node_modules</AppearText>
           <Notes>
             available to code via the path executables available in package.json
