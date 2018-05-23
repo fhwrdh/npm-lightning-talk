@@ -7,7 +7,10 @@ import {
   Appear,
   CodePane,
   Deck,
+  Fit,
+  Fill,
   Heading,
+  Layout,
   Link,
   ListItem,
   List,
@@ -15,6 +18,8 @@ import {
   Slide,
   Text,
 } from 'spectacle';
+
+import npmLogo from '../assets/1200px-Npm-logo.svg.png';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -70,6 +75,27 @@ const AppearText = ({children, ...props}) => (
   </Appear>
 );
 
+const Title = styled.div`
+  display: flex;
+
+  border: 0px solid yellow;
+  align-items: center;
+  justify-content: flex-end;
+  font-variant: all-small-caps;
+  font-size: 72px;
+`;
+
+const I = styled.img`
+  height: 3.5em;
+  margin-left: 0.2em;
+`;
+
+const D = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+`;
+
 export default class Presentation extends React.Component {
   render() {
     return (
@@ -79,11 +105,17 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
         progress="bar">
-
         <Slide bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            5 minutes of npm
-          </Heading>
+          <Layout>
+            <Fill>
+              <Heading fill caps>
+                5 mins of
+              </Heading>
+            </Fill>
+            <Fit>
+              <I src={npmLogo} />
+            </Fit>
+          </Layout>
           <T textAlign="right">May 2018</T>
           <T textAlign="right">WLVJS</T>
         </Slide>
@@ -103,7 +135,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <H1>NPM</H1>
+          <I src={npmLogo} />
           <AppearText>node package manager</AppearText>
           <AppearText>world's largest software registry</AppearText>
           <AppearText>npmjs.com</AppearText>
