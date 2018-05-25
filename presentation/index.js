@@ -161,13 +161,6 @@ export default class Presentation extends React.Component {
           </Notes>
         </Slide>
 
-        <Slide>
-          <H>global install</H>
-          <AppearText>npm install -g create-react-app</AppearText>
-          <Notes>
-            for things you want to run from the command line without a project
-          </Notes>
-        </Slide>
 
         <Slide>
           <H>run-script</H>
@@ -200,6 +193,8 @@ export default class Presentation extends React.Component {
 
         <Slide>
           <H>other topics</H>
+
+          <AppearText>npm install -g create-react-app</AppearText>
           <AppearText>npm view</AppearText>
           <AppearText>npm audit</AppearText>
           <AppearText>organizations / teams / scope</AppearText>
